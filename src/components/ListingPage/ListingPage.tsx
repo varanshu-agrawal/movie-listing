@@ -32,7 +32,7 @@ const ListingPage = () => {
             }
         }}>
             <SearchInput />
-            <div className='grid grid-cols-3 xl:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-2'
+            <div className='grid xl:grid-cols-4 md:grid-cols-3 xs:grid-cols-2 gap-2'
             >
                 {
                     movieListing?.Search.map(movie => (

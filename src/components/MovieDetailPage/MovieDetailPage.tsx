@@ -22,7 +22,7 @@ const MovieDetailPage = () => {
 
     return movieDetailObj
         ? <main className='flex-grow px-2 pt-2 mt-3 pb-[3rem] overflow-auto max-w-[1280px] mx-auto'>
-            <img src={movieDetailObj.Poster} alt={movieDetailObj.Title} className='mx-auto' />
+            <img src={movieDetailObj.Poster} alt={movieDetailObj.Title} className='mx-auto max-w-[85%]' />
             <div className='mt-2 text-left'>
                 <h1 className='header text-[2rem]'>{movieDetailObj.Title} <span className='text-[1.25rem] capitalize'>({movieDetailObj.Year})</span></h1>
                 <div className='mt-5'>
