@@ -26,6 +26,7 @@ const SearchInput = () => {
 
     useEffect(() => {
         (async () => {
+            if (!searchTerm) return
             const { signal } = abortController
             const res = await ApiService.searchTheMovie(searchTerm, signal)
             if (res?.Search) {
